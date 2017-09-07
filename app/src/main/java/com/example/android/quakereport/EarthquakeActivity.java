@@ -43,20 +43,7 @@ public class EarthquakeActivity extends AppCompatActivity {
 
         // Create a new {@link ArrayAdapter} of earthquakes
 
-        ArrayList dataList = new ArrayList();
-        Log.d("Asmit", String.valueOf(dataList.size()));
-
-        for(int i=0 ; i<100;i++){
-            Data data = new Data();
-            data.setPlace("Place "+i+" #");
-            data.setDate("Date "+i+" $");
-            data.setMag(i);
-            dataList.add(data);
-            Log.d("Asmit", "Adding for "+i);
-
-        }
-
-        CustomListViewAdapter customListViewAdapter = new CustomListViewAdapter(this.getApplicationContext(),dataList);
+        CustomListViewAdapter customListViewAdapter = new CustomListViewAdapter(this.getApplicationContext(),QueryUtils.extractEarthquakes());
 
         // Set the adapter on the {@link ListView}
         // so the list can be populated in the user interface

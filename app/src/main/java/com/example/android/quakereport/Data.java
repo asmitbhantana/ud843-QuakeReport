@@ -8,20 +8,22 @@ import java.util.Date;
 
 public class Data {
 
-    private float mag;
+    private double mag;
     private String place;
     private String date;
+    private String time;
+    private String direction;
 
 
 
     private void Date() {
     }
 
-    public float getMag() {
+    public double getMag() {
         return mag;
     }
 
-    public void setMag(float mag) {
+    public void setMag(double mag) {
         this.mag = mag;
     }
 
@@ -42,4 +44,19 @@ public class Data {
     }
 
 
+    public String getTime() {
+        return time;
+    }
+
+    public void setTime(String time) {
+        this.time = time;
+    }
+
+    public String getDirection() {
+        return direction;
+    }
+
+    public void setDirection(String direction) {
+        this.direction = direction;
+    }
 }
