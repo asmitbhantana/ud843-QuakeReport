@@ -13,17 +13,18 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by asmit on 9/4/17.
  */
 
 public class CustomListViewAdapter extends ArrayAdapter<Data>{
-    private ArrayList<Data> datas;
+    private List<Data> datas;
     private Context context;
     LayoutInflater inflater = null;
 
-    public CustomListViewAdapter(@NonNull Context context, @NonNull ArrayList<Data> objects) {
+    public CustomListViewAdapter(@NonNull Context context, @NonNull List<Data> objects) {
         super(context, 0, objects);
         this.context = context;
         this.datas = objects;

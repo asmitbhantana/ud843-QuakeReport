@@ -13,6 +13,7 @@ public class Data {
     private String date;
     private String time;
     private String direction;
+    private String url;
 
 
 
@@ -58,5 +59,13 @@ public class Data {
 
     public void setDirection(String direction) {
         this.direction = direction;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
     }
 }
